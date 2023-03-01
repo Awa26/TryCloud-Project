@@ -1,4 +1,4 @@
-package com.cydeo.pages;
+package com.seamlessly.pages;
 
 
 import com.fleet.utilities.Driver;
