@@ -1,7 +1,7 @@
-package com.TryCloud.step_definitions;
+package com.seamlessly.step_definitions;
 
-import com.TryCloud.pages.LoginPage;
-import com.TryCloud.utilities.ConfigurationReader;
+import com.seamlessly.pages.LoginPage;
+import com.seamlessly.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
 
 public class LoginStepDefs {

@@ -1,8 +1,8 @@
-package com.TryCloud.step_definitions;
+package com.seamlessly.step_definitions;
 
-import com.TryCloud.utilities.BrowserUtils;
-import com.TryCloud.utilities.ConfigurationReader;
-import com.TryCloud.utilities.Driver;
+import com.seamlessly.utilities.BrowserUtils;
+import com.seamlessly.utilities.ConfigurationReader;
+import com.seamlessly.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

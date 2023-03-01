@@ -1,4 +1,4 @@
-package com.TryCloud.runners;
+package com.seamlessly.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
