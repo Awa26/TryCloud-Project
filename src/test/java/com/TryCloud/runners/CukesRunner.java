@@ -1,4 +1,4 @@
-package com.cydeo.runners;
+package com.TryCloud.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
