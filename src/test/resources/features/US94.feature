@@ -3,8 +3,7 @@ Feature:  As a user, I should be able to update settings
 
   Background: User is already logged in
     Given user on the dashboard page
-    When user enters username "<username>" and passcode "<password>"
-    And user click the login button
+
 
 
   Scenario: Verify the users can check any checkbox on the Files page
