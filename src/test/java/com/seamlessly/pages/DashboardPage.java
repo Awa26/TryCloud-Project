@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public abstract class DashboardPage {
+public class DashboardPage {
 
     public DashboardPage() {
         PageFactory.initElements(Driver.getDriver(), this);
