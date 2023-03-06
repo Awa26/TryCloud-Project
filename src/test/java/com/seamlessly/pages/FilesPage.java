@@ -16,5 +16,8 @@ public class FilesPage {
     @FindBy(className = "settings-button")
     public WebElement settingsButton;
 
+    @FindBy(id = "showRichWorkspacesToggle")
+    public WebElement richWorkspacesCheckbox;
+
 
 }

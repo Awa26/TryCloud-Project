@@ -11,9 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DashboardPage {
+public abstract class BasePage {
 
-    public DashboardPage() {
+    public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -21,8 +21,7 @@ public class DashboardPage {
      * @return page name, for example: Dashboard
      */
 
-    @FindBy(xpath = "// a [@aria-label = 'Files']")
-    public WebElement filesIcon;
+
 
 
 
