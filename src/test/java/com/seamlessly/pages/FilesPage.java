@@ -16,8 +16,15 @@ public class FilesPage {
     @FindBy(className = "settings-button")
     public WebElement settingsButton;
 
-    @FindBy(id = "showRichWorkspacesToggle")
+    @FindBy(xpath = "//label [@for ='showRichWorkspacesToggle']")
     public WebElement richWorkspacesCheckbox;
 
+    @FindBy(xpath = "//label [@for ='recommendationsEnabledToggle']")
+    public WebElement recommendationsCheckbox;
 
+    @FindBy(xpath = "//label [@for ='showhiddenfilesToggle']")
+    public WebElement hiddenFilesCheckbox;
+
+    @FindBy(xpath = "//label [@for ='cropimagepreviewsToggle']")
+    public WebElement cropImageCheckbox;
 }
