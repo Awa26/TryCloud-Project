@@ -13,6 +13,8 @@ public class DashboardPage {
     }
 
 
+    @FindBy(xpath = "// a [@aria-label = 'Files']")
+    public WebElement filesIcon;
 
 
 @FindBy(id="appmenu")
