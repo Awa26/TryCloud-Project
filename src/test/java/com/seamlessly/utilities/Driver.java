@@ -15,7 +15,7 @@ public class Driver {
     We make the WebDriver private, because we want to close access from outside the class.
     We are making it static, because we will use it in a static method.
      */
-    //private static WebDriver driver; // default value = null
+    private static WebDriver driver; // default value = null
 
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
 

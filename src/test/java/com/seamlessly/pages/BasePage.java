@@ -3,8 +3,8 @@ package com.seamlessly.pages;
 
 
 
-import com.project_name.utilities.BrowserUtils;
-import com.project_name.utilities.Driver;
+import com.seamlessly.utilities.BrowserUtils;
+import com.seamlessly.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -19,25 +19,6 @@ import java.util.List;
 
 public abstract class BasePage {
 
-    @FindBy(css = "span.title-level-1")
-    public List<WebElement> menuOptions;
-
-    @FindBy(css = "div[class='loader-mask shown']")
-    @CacheLookup
-    protected WebElement loaderMask;
-
-    @FindBy(css = "h1[class='oro-subtitle']")
-    public WebElement pageSubTitle;
-
-    @FindBy(css = "#user-menu > a")
-    public WebElement userName;
-
-    @FindBy(linkText = "Logout")
-    public WebElement logOutLink;
-
-    @FindBy(linkText = "My User")
-    public WebElement myUser;
-
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -46,12 +27,7 @@ public abstract class BasePage {
     /**
      * @return page name, for example: Dashboard
      */
-    public String getPageSubTitle() {
-        //ant time we are verifying page name, or page subtitle, loader mask appears
-        waitUntilLoaderScreenDisappear();
-//        BrowserUtils.waitForStaleElement(pageSubTitle);
-        return pageSubTitle.getText();
-    }
+
 
 
     /**
@@ -59,15 +35,7 @@ public abstract class BasePage {
      * NoSuchElementException will be handled  bu try/catch block
      * Thus, we can continue in any case.
      */
-    public void waitUntilLoaderScreenDisappear() {
-        try {
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-            wait.until(ExpectedConditions.invisibilityOf(loaderMask));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-    }
 
 
 
