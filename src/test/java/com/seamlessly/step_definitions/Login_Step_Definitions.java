@@ -21,7 +21,7 @@ String expectedTitle = "Dashboard";
 
 
 
-    @When("user use username {string} and passcode {string}")
+    @When("user enters username {string} and passcode {string}")
     public void userUseUsernameAndPasscode(String userName, String password) {
 loginPage.txt_userName.sendKeys(userName);
 loginPage.txt_password.sendKeys(password);
