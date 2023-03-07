@@ -18,7 +18,7 @@ public abstract class BasePage {
     }
 
     /**
-     * @return page name, for example: Dashboard
+     * @return page name, for example: Dashboardd
      */
 
 
