@@ -1,10 +1,13 @@
 package com.seamlessly.pages;
 
 import com.seamlessly.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DashboardPage {
@@ -13,33 +16,49 @@ public class DashboardPage {
     }
 
 
+
+    public WebElement talkIcon;
+
+    public WebElement circlesIcon;
     @FindBy(xpath = "// a [@aria-label = 'Files']")
     public WebElement filesIcon;
 
 
-@FindBy(id="appmenu")
-    List<WebElement> appMenu;
+@FindBy(xpath="//ul[@id='appmenu']/li//spa")
+   public List<WebElement> appMenu;
+
+
+
+
+@FindBy(xpath = "//li[@data-id]")
+public List<WebElement> menuOptions;
 
 @FindBy(xpath="(//li[@data-id='dashboard'])[1]")
-    WebElement dashboardIcon;
+public    WebElement dashboardIcon;
 
 
 @FindBy(xpath="(//li[@data-id='photos'])[1]")
-    WebElement photosIcon;
+ public   WebElement photosIcon;
 
 
 @FindBy(xpath="(//li[@data-id='activity'])[1]")
-    WebElement activityIcon;
+public    WebElement activityIcon;
 
 @FindBy(xpath="(//li[@data-id='contacts'])[1]")
-    WebElement contactsIcon;
+ public   WebElement contactsIcon;
 
 @FindBy(xpath="(//li[@data-id='calendar'])[1]")
-    WebElement calendarIcon;
+ public   WebElement calendarIcon;
 
     @FindBy(xpath="(//li[@data-id='deck'])[1]")
-    WebElement deckIcon;
+ public   WebElement deckIcon;
 
     @FindBy(xpath="(//li[@data-id='tasks'])[1]")
-    WebElement tasksIcon;
+ public   WebElement tasksIcon;
+
+    @FindBy(xpath="(//li[@data-id='notes'])[1]")
+    public   WebElement notesIcon;
+
+ public List<WebElement> MenuOptions = new ArrayList<>(Arrays.asList(dashboardIcon,filesIcon,photosIcon,activityIcon,
+         contactsIcon,calendarIcon,notesIcon, deckIcon,tasksIcon));
 }
