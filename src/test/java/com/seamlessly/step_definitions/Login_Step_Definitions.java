@@ -15,7 +15,7 @@ public class Login_Step_Definitions {
     }
     @Then("verify the user should be at the dashboard page")
     public void verify_the_user_should_be_at_the_dashboard_page() {
-String expectedTitle = "Dashboard";
+     String expectedTitle = "Dashboard";
        BrowserUtils.verifyTitleContains(expectedTitle);
     }
 
