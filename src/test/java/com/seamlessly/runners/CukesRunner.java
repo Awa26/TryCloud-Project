@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/seamlessly/step_definitions",
-        dryRun = false,
+        dryRun = true,
         tags = "@login",
         publish = true //generating a report with public link
 )
