@@ -16,12 +16,18 @@ public class DashboardPage {
     }
 
 
+
+    public WebElement talkIcon;
+
+    public WebElement circlesIcon;
     @FindBy(xpath = "// a [@aria-label = 'Files']")
     public WebElement filesIcon;
 
 
-@FindBy(id="appmenu")
-   public WebElement appMenu;
+@FindBy(xpath="//ul[@id='appmenu']/li//spa")
+   public List<WebElement> appMenu;
+
+
 
 
 @FindBy(xpath = "//li[@data-id]")
