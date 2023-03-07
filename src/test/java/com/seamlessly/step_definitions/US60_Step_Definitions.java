@@ -25,20 +25,35 @@ public class US60_Step_Definitions {
     public void verify_the_user_see_the_following_modules(List<String> expectedOptions) {
 
         BrowserUtils.sleep(5);
-        System.out.println("expectedOptions = " + expectedOptions);
-        List<String> actualMenuOption = new ArrayList<>();
 
 
-        System.out.println("actualMenuOption.size() = " + actualMenuOption.size());
-        System.out.println("dashboardPage.MenuOptions.size() = " + dashboardPage.MenuOptions.size());
-        System.out.println("dashboardPage.deckIcon.getText() = " + dashboardPage.deckIcon.getText());
-        System.out.println("dashboardPage.deckIcon.getAttribute(\"data-id\") = " + dashboardPage.deckIcon.getAttribute("data-id"));
+      /*  List<String> actualMenuOption = new ArrayList<>();
 
-        for (WebElement each : dashboardPage.MenuOptions) {
+
+        for (WebElement each : dashboardPage.appMenu) {
             actualMenuOption.add(each.getAttribute("data-id"));
         }
+        System.out.println("expectedOptions = " + expectedOptions);
         System.out.println("actualMenuOption = " + actualMenuOption);
-     //   Assert.assertTrue(actualMenuOption.equals(expectedOptions));
+        Assert.assertFalse(actualMenuOption.equals(expectedOptions));
+
+    */
+
+
+        BrowserUtils.verifyElementDisplayed(dashboardPage.dashboardIcon);
+        System.out.println("Dashboard module is displayed");
+        BrowserUtils.verifyElementDisplayed(dashboardPage.filesIcon);
+        System.out.println("Files module is displayed");
+        BrowserUtils.verifyElementDisplayed(dashboardPage.photosIcon);
+        System.out.println("Photos module is displayed");
+        BrowserUtils.verifyElementDisplayed(dashboardPage.activityIcon);
+        System.out.println("Activity module is displayed");
+        BrowserUtils.verifyElementDisplayed(dashboardPage.talkIcon);
+        System.out.println("Talk module is displayed");
+        BrowserUtils.verifyElementDisplayed(dashboardPage.contactsIcon);
+        BrowserUtils.verifyElementDisplayed(dashboardPage.circlesIcon);
+        BrowserUtils.verifyElementDisplayed(dashboardPage.calendarIcon);
+        BrowserUtils.verifyElementDisplayed(dashboardPage.deckIcon);
     }
 
 }
