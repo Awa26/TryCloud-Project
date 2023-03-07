@@ -13,6 +13,5 @@ app.
       | Activity  |
       | Talk      |
       | Contacts  |
-      | Circles   |
       | Calendar  |
       | Deck      |
