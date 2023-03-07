@@ -25,18 +25,16 @@ public class US60_Step_Definitions {
     @Then("Verify the user see the following modules:")
     public void verify_the_user_see_the_following_modules(List<String> expectedOptions) {
 
-        BrowserUtils.sleep(5);
-        System.out.println("expectedOptions = " + expectedOptions);
         List<String> actualMenuOption = new ArrayList<>();
         Actions action = new Actions(Driver.getDriver());
         action.moveToElement(dashboardPage.deckIcon).perform();
 
 
         for (WebElement each : dashboardPage.menuOptions) {
-           // System.out.println((each.getAttribute("aria-label")).toUpperCase());
-            System.out.println(each.getText());
+            //System.out.println(each.getText());
             actualMenuOption.add(each.getText());
         }
+        System.out.println("expectedOptions = " + expectedOptions);
         System.out.println("actualMenuOption = " + actualMenuOption);
         Assert.assertFalse(actualMenuOption.equals(expectedOptions));
     }
