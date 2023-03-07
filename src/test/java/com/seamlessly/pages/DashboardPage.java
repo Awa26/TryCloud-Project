@@ -1,7 +1,6 @@
 package com.seamlessly.pages;
 
 import com.seamlessly.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,7 +15,7 @@ public class DashboardPage {
     }
 
 
-    @FindBy(xpath = "// a [@aria-label = 'Files']")
+    @FindBy(xpath = "// a [@ariaaria-label-label = 'Files']")
     public WebElement filesIcon;
 
 
@@ -24,7 +23,7 @@ public class DashboardPage {
    public WebElement appMenu;
 
 
-@FindBy(xpath = "//li[@data-id]")
+@FindBy(xpath = "//ul[@id='appmenu']//span")
 public List<WebElement> menuOptions;
 
 @FindBy(xpath="(//li[@data-id='dashboard'])[1]")

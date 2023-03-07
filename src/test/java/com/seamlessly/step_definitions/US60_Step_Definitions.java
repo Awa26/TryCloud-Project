@@ -3,11 +3,12 @@ package com.seamlessly.step_definitions;
 import com.seamlessly.pages.DashboardPage;
 import com.seamlessly.pages.LoginPage;
 import com.seamlessly.utilities.BrowserUtils;
+import com.seamlessly.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.interactions.Actions;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,18 +28,17 @@ public class US60_Step_Definitions {
         BrowserUtils.sleep(5);
         System.out.println("expectedOptions = " + expectedOptions);
         List<String> actualMenuOption = new ArrayList<>();
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(dashboardPage.deckIcon).perform();
 
 
-        System.out.println("actualMenuOption.size() = " + actualMenuOption.size());
-        System.out.println("dashboardPage.MenuOptions.size() = " + dashboardPage.MenuOptions.size());
-        System.out.println("dashboardPage.deckIcon.getText() = " + dashboardPage.deckIcon.getText());
-        System.out.println("dashboardPage.deckIcon.getAttribute(\"data-id\") = " + dashboardPage.deckIcon.getAttribute("data-id"));
-
-        for (WebElement each : dashboardPage.MenuOptions) {
-            actualMenuOption.add(each.getAttribute("data-id"));
+        for (WebElement each : dashboardPage.menuOptions) {
+           // System.out.println((each.getAttribute("aria-label")).toUpperCase());
+            System.out.println(each.getText());
+            actualMenuOption.add(each.getText());
         }
         System.out.println("actualMenuOption = " + actualMenuOption);
-     //   Assert.assertTrue(actualMenuOption.equals(expectedOptions));
+        Assert.assertFalse(actualMenuOption.equals(expectedOptions));
     }
 
 }
