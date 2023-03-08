@@ -16,9 +16,9 @@ import org.junit.runner.RunWith;
         dryRun = false,
 
 
-        tags = "@MP",
+       // tags = "@MP",
 
-       // tags = "@IG",
+        tags = "@IG",
 
 
        // tags = "@uploadFile",
