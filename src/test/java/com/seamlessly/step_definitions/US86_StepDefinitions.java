@@ -12,12 +12,14 @@ public class US86_StepDefinitions {
 
     LoginPage loginPage = new LoginPage();
     FilesPage filesPage = new FilesPage();
-
+/*
     DashboardPage dashboardPage = new DashboardPage();
     @When("user is already logged in.")
     public void user_is_already_logged_in() {
        loginPage.login();
     }
+
+ */
 
 
 
@@ -29,7 +31,7 @@ public class US86_StepDefinitions {
 
     @Then("verify the page title is {string}")
     public void verify_the_page_title_is(String expectedTitle) {
-        BrowserUtils.verifyTitleContains(expectedTitle);
+       BrowserUtils.verifyTitleContains(expectedTitle);
     }
 
 
