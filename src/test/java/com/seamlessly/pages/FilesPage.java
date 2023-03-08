@@ -32,4 +32,11 @@ public class FilesPage {
 public WebElement files_Icon;
     @FindBy(xpath = "//th[@id='headerSelection']/label")
     public WebElement selectAllFiles_checkBox;
+
+    @FindBy(xpath = "//a[@class='button new']")
+    public WebElement addIcon;
+
+    @FindBy(xpath = "//span[@class='displayname']" )
+    public WebElement uploadFileButton;
+
 }
