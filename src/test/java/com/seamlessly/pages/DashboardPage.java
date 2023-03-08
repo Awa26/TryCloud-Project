@@ -24,7 +24,7 @@ public class DashboardPage {
     public WebElement filesIcon;
 
 
-@FindBy(xpath="//ul[@id='appmenu']/li//spa")
+@FindBy(xpath="//ul[@id='appmenu']//a")
    public List<WebElement> appMenu;
 
 
