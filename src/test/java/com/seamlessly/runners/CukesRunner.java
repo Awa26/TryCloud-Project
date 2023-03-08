@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         glue = "com/seamlessly/step_definitions",
         dryRun = false,
 
-        tags = "@ac",
+        tags = "@uploadFile",
        // tags = "@dashboard",
 
         publish = true //generating a report with public link
