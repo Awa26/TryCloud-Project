@@ -27,4 +27,9 @@ public class FilesPage {
 
     @FindBy(xpath = "//label [@for ='cropimagepreviewsToggle']")
     public WebElement cropImageCheckbox;
+
+@FindBy(xpath = "//ul[@id='appmenu']//li[@data-id='files']")
+public WebElement files_Icon;
+    @FindBy(xpath = "//th[@id='headerSelection']/label")
+    public WebElement selectAllFiles_checkBox;
 }
