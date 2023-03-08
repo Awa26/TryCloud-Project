@@ -18,7 +18,7 @@ public class FilesActionPage {
     @FindBy(xpath = "//a[@class='menuitem action action-delete permanent']/span")
 public WebElement deleteIcon;
 
-    @FindBy(xpath = ("//a[@class='nav-icon-trashbin svg']")
+    @FindBy(xpath = "//a[@class='nav-icon-trashbin svg']")
 public WebElement deleteFilesButton;
 
     @FindBy(xpath = "//span[.='Iuliia1']")

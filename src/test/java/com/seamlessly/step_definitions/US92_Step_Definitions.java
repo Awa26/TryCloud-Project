@@ -42,10 +42,10 @@ Assert.assertTrue(actionPage.deletedFileName.isDisplayed());
 
     }
 
-    @When("the user clicks the {string} module")
+  /*  @When("the user clicks the {string} module")
     public void theUserClicksTheModule(String arg0) {
         dashboardPage.filesIcon.click();
 
-  }
+  }*/
 
 }

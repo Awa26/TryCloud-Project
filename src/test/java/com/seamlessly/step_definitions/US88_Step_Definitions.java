@@ -14,10 +14,10 @@ public class US88_Step_Definitions {
     public void the_user_clicks_the_add_icon_on_the_top() {
         filesPage.addIcon.click();
     }
-    @When("users uploads file with the “upload file” option")
+    @When("users uploads file with the upload file option")
     public void users_uploads_file_with_the_upload_file_option() {
-        filesPage.uploadFileButton.click();
-        filesPage.uploadFileButton.sendKeys("C:\\Users\\marko\\IdeaProjects\\TryCloud-Project\\src\\test\\resources\\file\\marko.txt");
+        //filesPage.uploadFileButton.click();
+        filesPage.uploadFileButton.sendKeys("/Users/ivayloklisarski/Desktop/Upload.txt");
         //BrowserUtils.sleep(2);
     }
     @Then("verify the file is displayed on the page")
