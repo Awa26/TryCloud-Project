@@ -3,7 +3,7 @@ Feature: As a user, I should be able to delete a file/folder.
 
   Background: User is already logged in
         Given user on the dashboard page
-When the user clicks the "Files" module
+        When the user clicks the "Files" module
 
   Scenario: Verify users delete a file/folder
 
