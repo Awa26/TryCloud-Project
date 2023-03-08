@@ -62,3 +62,5 @@ public    WebElement activityIcon;
  public List<WebElement> MenuOptions = new ArrayList<>(Arrays.asList(dashboardIcon,filesIcon,photosIcon,activityIcon,
          contactsIcon,calendarIcon,notesIcon, deckIcon,tasksIcon));
 }
+
+
