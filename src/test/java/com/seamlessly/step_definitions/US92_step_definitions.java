@@ -18,27 +18,27 @@ public class US92_step_definitions {
 
 FilesActionPage actionPage = new FilesActionPage();
 
-    
-  @When("user click action-icon from any file on the page")
+
+    @When("user click action-icon from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page() {
-      BrowserUtils.sleep(5);
-       actionPage.actionIcon.click();
+        BrowserUtils.sleep(2);
+        actionPage.actionIcon.click();
     }
 
     @When("user choose the {string} option")
     public void user_choose_the_option(String deleteFileOptions) {
-actionPage.deleteIcon.click();
+        actionPage.deleteIcon.click();
 
     }
 
     @When("the user clicks the {string} sub-module on the left side")
     public void the_user_clicks_the_sub_module_on_the_left_side(String deleteFilesButton) {
-actionPage.deleteFilesButton.click();
+        actionPage.deleteFilesButton.click();
     }
 
     @Then("Verify the deleted file is displayed on the Deleted Files page.")
     public void verify_the_deleted_file_is_displayed_on_the_deleted_files_page() {
-Assert.assertTrue(actionPage.deletedFileName.isDisplayed());
+        Assert.assertTrue(actionPage.deletedFileName.isDisplayed());
 
     }
 

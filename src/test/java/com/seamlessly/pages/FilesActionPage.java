@@ -11,16 +11,16 @@ public class FilesActionPage {
         PageFactory.initElements(Driver.getDriver(), this);}
 
 
-    @FindBy(xpath = "(//span[@class='icon icon-more'])[2]")
+    @FindBy(xpath = "(//span[@class='icon icon-more'])[5]")
     public WebElement actionIcon;
 
 
-    @FindBy(xpath = "(//span[.='Delete file'])")
-public WebElement deleteIcon;
+    @FindBy(xpath = "//a[@class='menuitem action action-delete permanent']/span")
+    public WebElement deleteIcon;
 
-    @FindBy(xpath = "(//a[@class='nav-icon-trashbin svg'])")
-public WebElement deleteFilesButton;
+    @FindBy(xpath = "//a[@class='nav-icon-trashbin svg']")
+    public WebElement deleteFilesButton;
 
-    @FindBy(xpath = "//span[.='Doug Graves']")
-public WebElement deletedFileName;
+    @FindBy(xpath = "//span[.='Iuliia1']")
+    public WebElement deletedFileName;
 }
