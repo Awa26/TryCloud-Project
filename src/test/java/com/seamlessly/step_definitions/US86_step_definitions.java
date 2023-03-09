@@ -8,7 +8,7 @@ import io.cucumber.java.en.*;
 
 import java.nio.file.Files;
 
-public class US86_StepDefinitions {
+public class US86_step_definitions {
 
     LoginPage loginPage = new LoginPage();
     FilesPage filesPage = new FilesPage();
