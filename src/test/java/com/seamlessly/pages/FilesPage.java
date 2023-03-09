@@ -27,4 +27,18 @@ public class FilesPage {
 
     @FindBy(xpath = "//label [@for ='cropimagepreviewsToggle']")
     public WebElement cropImageCheckbox;
+
+@FindBy(xpath = "//ul[@id='appmenu']//li[@data-id='files']")
+public WebElement files_Icon;
+    @FindBy(xpath = "//th[@id='headerSelection']/label")
+    public WebElement selectAllFiles_checkBox;
+
+    @FindBy(xpath = "//a[@class='button new']")
+    public WebElement addIcon;
+
+    @FindBy(xpath = "//input[@id='file_upload_start']" )
+    public WebElement uploadFileButton;
+
+    @FindBy(xpath = "(//span[.='marko'])[1]")
+    public WebElement uploadedFile;
 }

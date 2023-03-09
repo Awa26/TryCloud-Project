@@ -14,7 +14,25 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/seamlessly/step_definitions",
         dryRun = false,
+
         tags = "@invalidLogin",
+
+
+
+       // tags = "@wip1",
+
+
+        tags = "@MP",
+
+       // tags = "@IG",
+
+
+       // tags = "@uploadFile",
+
+
+       // tags = "@dashboard",
+
+
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
