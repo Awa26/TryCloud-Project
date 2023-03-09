@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US92_Step_Definitions {
+public class US92_step_definitions {
 
     DashboardPage dashboardPage = new DashboardPage();
     FilesPage filesPage = new FilesPage();

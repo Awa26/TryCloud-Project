@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 
-public class US95_SearchFiles_step_definition {
+public class US95_step_definitions {
     SearchFilesPage searchFilesPage = new SearchFilesPage();
 
 
