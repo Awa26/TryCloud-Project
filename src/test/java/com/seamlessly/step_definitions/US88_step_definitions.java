@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US88_Step_Definitions {
+public class US88_step_definitions {
 
     FilesPage filesPage = new FilesPage();
 
@@ -18,8 +18,10 @@ public class US88_Step_Definitions {
     @When("users uploads file with the upload file option")
     public void users_uploads_file_with_the_upload_file_option() {
         //filesPage.uploadFileButton.click();
-        filesPage.uploadFileButton.sendKeys("C:\\Users\\marko\\OneDrive\\Skrivbord\\Marko Test File.txt");
-        //BrowserUtils.sleep(2);
+        //filesPage.uploadFileButton.sendKeys("C:\\Users\\marko\\OneDrive\\Skrivbord\\Marko Test File.txt");
+        String pathName = BrowserUtils.dynamicPath();
+        System.out.println(pathName);
+        filesPage.uploadFileButton.sendKeys(pathName);        //BrowserUtils.sleep(2);
     }
     @Then("verify the file is displayed on the page")
     public void verify_the_file_is_displayed_on_the_page() {

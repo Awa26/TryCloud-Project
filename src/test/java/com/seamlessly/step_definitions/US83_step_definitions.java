@@ -5,7 +5,7 @@ import com.seamlessly.utilities.BrowserUtils;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
-public class Login_Step_Definitions {
+public class US83_step_definitions {
     LoginPage loginPage = new LoginPage();
 
     @When("user click the login button")

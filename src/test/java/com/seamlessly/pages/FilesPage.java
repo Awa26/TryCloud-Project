@@ -39,6 +39,6 @@ public WebElement files_Icon;
     @FindBy(xpath = "//input[@id='file_upload_start']" )
     public WebElement uploadFileButton;
 
-    @FindBy(xpath = "(//span[.='Marko Test File'])[2]")
+    @FindBy(xpath = "(//span[.='marko'])[1]")
     public WebElement uploadedFile;
 }
