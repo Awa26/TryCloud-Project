@@ -15,6 +15,9 @@ import org.junit.runner.RunWith;
         glue = "com/seamlessly/step_definitions",
         dryRun = false,
 
+        tags = "@invalidLogin",
+
+
 
        // tags = "@wip1",
 
@@ -28,6 +31,7 @@ import org.junit.runner.RunWith;
 
 
        // tags = "@dashboard",
+
 
         publish = true //generating a report with public link
 )
