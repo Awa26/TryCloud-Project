@@ -16,12 +16,16 @@ import org.junit.runner.RunWith;
         dryRun = false,
 
 
+       // tags = "@wip1",
+
+
        // tags = "@MP",
 
-        tags = "@IG",
+       // tags = "@IG",
 
 
        // tags = "@uploadFile",
+
 
        // tags = "@dashboard",
 
