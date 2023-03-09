@@ -484,5 +484,13 @@ public class BrowserUtils {
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time)).until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+    public static String dynamicPath(){
+        ///Users/ivayloklisarski/IdeaProjects/TryCloud-Project/src/test/resources/file/ivo.txt
+        String name = System.getProperty("user.name");
+        String path = "/Users/" + name + "/IdeaProjects/TryCloud-Project/src/test/resources/file/marko.txt";
+
+        return path;
+    }
+
 
 }
