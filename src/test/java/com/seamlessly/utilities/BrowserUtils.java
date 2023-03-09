@@ -1,5 +1,6 @@
 package com.seamlessly.utilities;
 
+import com.github.javafaker.Faker;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -485,11 +486,25 @@ public class BrowserUtils {
     }
 
     public static String dynamicPath(){
+        String os = "C:";
+        String osName = System.getProperty("os.name").toLowerCase();
+        if (osName.contains("mac")) {
+            os = "";
+        }
         ///Users/ivayloklisarski/IdeaProjects/TryCloud-Project/src/test/resources/file/ivo.txt
         String name = System.getProperty("user.name");
-        String path = "C:/Users/" + name + "/IdeaProjects/TryCloud-Project/src/test/resources/file/marko.txt";
+        String path = os + "/Users/" + name + "/IdeaProjects/TryCloud-Project/src/test/resources/file/marko.txt";
 
         return path;
+    }
+
+    public static String randomName;
+    public static String randomNameGenerator(){
+        if(randomName != null ){
+            return randomName;
+        }
+        Faker faker = new Faker();
+        return randomName = faker.funnyName().name();
     }
 
 
