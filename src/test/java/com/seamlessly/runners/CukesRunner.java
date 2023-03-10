@@ -24,6 +24,10 @@ import org.junit.runner.RunWith;
 
        // tags = "@uploadFile",
 
+
+        tags = "",
+
+
        // tags = "@dashboard",
 
         publish = true //generating a report with public link
