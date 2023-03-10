@@ -13,8 +13,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/seamlessly/step_definitions",
-        dryRun = false,
-        tags = "@cleanFolders",
+        dryRun = true,
+        tags = "@fs",
+       // tags = "@cleanFolders",
         //tags = "@ac",
        // tags = "@MP",
 
