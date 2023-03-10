@@ -13,9 +13,21 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/seamlessly/step_definitions",
-        dryRun = false,
+        dryRun = true,
+        tags = "@fs",
+       // tags = "@cleanFolders",
+        //tags = "@ac",
+       // tags = "@MP",
+
+       // tags = "@IG",
+
+
+       // tags = "@uploadFile",
+
 
         tags = "",
+
+
        // tags = "@dashboard",
 
         publish = true //generating a report with public link

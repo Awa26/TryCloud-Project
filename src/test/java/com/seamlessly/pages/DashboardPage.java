@@ -24,7 +24,7 @@ public class DashboardPage {
     public WebElement filesIcon;
 
 
-@FindBy(xpath="//ul[@id='appmenu']/li//spa")
+@FindBy(xpath="//ul[@id='appmenu']//a")
    public List<WebElement> appMenu;
 
 
@@ -62,3 +62,5 @@ public    WebElement activityIcon;
  public List<WebElement> MenuOptions = new ArrayList<>(Arrays.asList(dashboardIcon,filesIcon,photosIcon,activityIcon,
          contactsIcon,calendarIcon,notesIcon, deckIcon,tasksIcon));
 }
+
+
