@@ -23,4 +23,24 @@ public class FilesActionPage {
 
     @FindBy(xpath = "//span[.='Iuliia1']")
     public WebElement deletedFileName;
+
+
+    @FindBy(xpath = "//span[@class='icon icon-details']")
+    public WebElement detailsIcon ;
+
+
+    @FindBy(xpath = "//a[@id='comments']")
+    public WebElement commentsIcon ;
+
+    @FindBy(xpath = "//div[@role='textbox']")
+
+    public WebElement commentBox ;
+
+    @FindBy(xpath = "//input[@disabled='disabled']")
+
+    public WebElement submitCommentButton;
+
+    @FindBy(xpath = "//div[@class='comment__message']")
+
+    public WebElement commentMessage;
 }
