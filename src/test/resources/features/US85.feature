@@ -11,7 +11,8 @@ app.
       | Files     |
       | Photos    |
       | Activity  |
-      | Talk      |
       | Contacts  |
       | Calendar  |
+      | Notes     |
       | Deck      |
+      | Tasks     |

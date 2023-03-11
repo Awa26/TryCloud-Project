@@ -31,5 +31,7 @@ public class LoginPage {
         loginBtn.click();
 
     }
+    @FindBy(xpath="//p[@class='warning wrongPasswordMsg']")
+    public  WebElement errorMessage;
 
 }
