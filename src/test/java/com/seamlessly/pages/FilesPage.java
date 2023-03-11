@@ -56,6 +56,29 @@ public WebElement files_Icon;
     @FindBy(xpath = "//tr[@data-type='dir']")
     List<WebElement> all_folders;
 
+    @FindBy(xpath = "//a[@class='actions-selected']")
+    public WebElement actionButton;
+
+
+
+    @FindBy(xpath = "//label[@for='select_all_files']")
+    public WebElement selectAll;
+    @FindBy(xpath = "//*[@id=\"selectedActionsList\"]/a")
+    public WebElement action;
+    @FindBy(xpath = "//*[@id=\"selectedActionsList\"]/div/ul/li[4]/a")
+    public WebElement deleteAll;
+    @FindBy(xpath = "//span[.='New text file']")
+    public WebElement addNewFile;
+    @FindBy(xpath = "//input[@value='New text file.md']")
+    public WebElement newFileInputBox;
+    @FindBy(xpath = "(//button//span[@role='img'])[2]")
+    public WebElement close;
+    @FindBy(xpath = "//span[.='Iuliia']")
+    public WebElement iuliiaFile;
+    @FindBy(xpath = "//span[.='Delete file']")
+    public WebElement delete;
+
+
     //String filename = "marko";
 
    // @FindBy(xpath = "//tr[@data-type='dir']//input")
