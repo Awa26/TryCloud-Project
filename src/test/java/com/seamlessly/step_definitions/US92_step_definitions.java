@@ -5,16 +5,19 @@ import com.seamlessly.pages.FilesActionPage;
 import com.seamlessly.pages.FilesPage;
 import com.seamlessly.pages.LoginPage;
 import com.seamlessly.utilities.BrowserUtils;
+import com.seamlessly.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.interactions.Actions;
 
 public class US92_step_definitions {
 
     DashboardPage dashboardPage = new DashboardPage();
     FilesPage filesPage = new FilesPage();
     LoginPage loginPage = new LoginPage();
+    Actions action = new Actions(Driver.getDriver());
 
 FilesActionPage actionPage = new FilesActionPage();
 
@@ -22,7 +25,9 @@ FilesActionPage actionPage = new FilesActionPage();
     @When("user click action-icon from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page() {
         BrowserUtils.sleep(2);
-        actionPage.actionIcon.click();
+        action.moveToElement(filesPage.iuliiaFile).contextClick()
+                .click(filesPage.delete)
+                .perform();
     }
 
     @When("user choose the {string} option")
