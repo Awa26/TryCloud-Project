@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/seamlessly/step_definitions",
         dryRun = true,
-        tags = "@fs",
+        tags = "",
        // tags = "@cleanFolders",
         //tags = "@ac",
        // tags = "@MP",
@@ -25,7 +25,6 @@ import org.junit.runner.RunWith;
        // tags = "@uploadFile",
 
 
-        tags = "",
 
 
        // tags = "@dashboard",

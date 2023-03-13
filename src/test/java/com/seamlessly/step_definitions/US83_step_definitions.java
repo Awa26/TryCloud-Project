@@ -8,6 +8,13 @@ import org.junit.Assert;
 public class US83_step_definitions {
     LoginPage loginPage = new LoginPage();
 
+    @When("user enters username {string} and passcode {string}")
+    public void userUseUsernameAndPasscode(String userName, String password) {
+        loginPage.txt_userName.sendKeys(userName);
+        loginPage.txt_password.sendKeys(password);
+
+    }
+
     @When("user click the login button")
     public void user_click_the_login_button() {
         loginPage.loginBtn.click();
@@ -21,11 +28,6 @@ public class US83_step_definitions {
 
 
 
-    @When("user enters username {string} and passcode {string}")
-    public void userUseUsernameAndPasscode(String userName, String password) {
-loginPage.txt_userName.sendKeys(userName);
-loginPage.txt_password.sendKeys(password);
 
-    }
 
 }
