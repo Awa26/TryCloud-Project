@@ -9,6 +9,7 @@ import com.seamlessly.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class US94_step_definitions {
 
@@ -33,16 +34,16 @@ public class US94_step_definitions {
     @Then("the user should be able to click any checkbox")
     public void the_user_should_be_able_to_click_any_checkbox() {
 
+       BrowserUtils.waitForClickablility(filesPage.richWorkspacesCheckbox, 5);
     filesPage.richWorkspacesCheckbox.click();
-       // BrowserUtils.sleep(2);
         BrowserUtils.waitForClickablility(filesPage.hiddenFilesCheckbox, 5);
-    filesPage.hiddenFilesCheckbox.click();
-      //  BrowserUtils.sleep(2);
+        filesPage.hiddenFilesCheckbox.click();
         BrowserUtils.waitForClickablility(filesPage.recommendationsCheckbox, 5);
-    filesPage.recommendationsCheckbox.click();
-      //  BrowserUtils.sleep(2);
+        filesPage.recommendationsCheckbox.click();
         BrowserUtils.waitForClickablility(filesPage.cropImageCheckbox, 5);
-    filesPage.cropImageCheckbox.click();
+        filesPage.cropImageCheckbox.click();
+
+
 
     // if selected assertion (is selected)
 
