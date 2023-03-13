@@ -25,10 +25,6 @@ public class US94_step_definitions {
         loginPage.login();
     }
 
-   /* @When("the user clicks the {string} module")
-    public void the_user_clicks_the_module(String fileButton) {
-        dashboardPage.filesIcon.click();
-    }*/
     @When("user clicks Settings on the left bottom corner")
     public void user_clicks_settings_on_the_left_bottom_corner() {
     filesPage.settingsButton.click();
@@ -38,12 +34,18 @@ public class US94_step_definitions {
     public void the_user_should_be_able_to_click_any_checkbox() {
 
     filesPage.richWorkspacesCheckbox.click();
-        BrowserUtils.sleep(2);
+       // BrowserUtils.sleep(2);
+        BrowserUtils.waitForClickablility(filesPage.hiddenFilesCheckbox, 5);
     filesPage.hiddenFilesCheckbox.click();
-        BrowserUtils.sleep(2);
+      //  BrowserUtils.sleep(2);
+        BrowserUtils.waitForClickablility(filesPage.recommendationsCheckbox, 5);
     filesPage.recommendationsCheckbox.click();
-        BrowserUtils.sleep(2);
+      //  BrowserUtils.sleep(2);
+        BrowserUtils.waitForClickablility(filesPage.cropImageCheckbox, 5);
     filesPage.cropImageCheckbox.click();
+
+    // if selected assertion (is selected)
+
     }
 
 
